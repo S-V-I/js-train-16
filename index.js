@@ -350,7 +350,7 @@ function countVowelsAndConsonants(word) {
     letter = letter.toLowerCase();
     if (vovels.includes(letter)) {
       vovelsCounter++;
-    } else {
+    } else if (letter >= "a" && letter <= "z") {
       consonantsCounter++;
     }
   }
